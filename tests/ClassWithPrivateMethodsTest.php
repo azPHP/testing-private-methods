@@ -23,6 +23,7 @@ class ClassWithPrivateMethodsTest extends TestCase
 
     public function testPrivateMethod(): void
     {
+        $obj = new ClassWithPrivateMethods();
         // ?
     }
 }
@@ -53,6 +54,6 @@ class ClassWithPrivateMethodsTest extends TestCase
 
 
 // magic!
-//$refl = new \ReflectionClass($this->validateDNS);
-//$method = $refl->getMethod('getAndValidateCurrentRecord');
+//$refl = new \ReflectionClass($obj);
+//$method = $refl->getMethod('iDoSomethingComplex');
 //$method->setAccessible(true);
